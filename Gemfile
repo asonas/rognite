@@ -17,6 +17,13 @@ group :test, :development do
     gem 'rspec-rails', '~> 2.0'
 end
 
+group :deployment do
+  gem 'capistrano'
+  gem 'capistrano_colors'
+  gem 'capistrano-ext'
+  gem 'capistrano_rsync_with_remote_cache'
+end
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
