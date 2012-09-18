@@ -14,7 +14,8 @@ gem 'devise'
 gem 'settingslogic'
 
 group :test, :development do
-    gem 'rspec-rails', '~> 2.0'
+  gem 'rspec-rails', '~> 2.0'
+  gem 'sqlite3'
 end
 
 group :deployment do
