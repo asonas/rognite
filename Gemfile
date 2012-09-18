@@ -12,6 +12,7 @@ gem 'delayed_job'
 gem 'dalli'
 gem 'devise'
 gem 'settingslogic'
+gem 'omniauth'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
