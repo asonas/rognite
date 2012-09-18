@@ -1,0 +1,23 @@
+%h1 Listing logs
+
+%table
+  %tr
+    %th Project
+    %th User
+    %th Body
+    %th
+    %th
+    %th
+
+  - @logs.each do |log|
+    %tr
+      %td= log.project_id
+      %td= log.user_id
+      %td= log.body
+      %td= link_to 'Show', log
+      %td= link_to 'Edit', edit_log_path(log)
+      %td= link_to 'Destroy', log, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Log', new_log_path
