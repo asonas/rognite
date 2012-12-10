@@ -10,6 +10,7 @@ gem 'dalli'
 gem 'settingslogic'
 gem 'omniauth'
 gem 'omniauth-twitter'
+gem 'versionist'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.0'
