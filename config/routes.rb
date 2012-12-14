@@ -1,7 +1,10 @@
 Rognite::Application.routes.draw do
-  resources :logs
 
+  resources :logs
   resources :projects
+
+  delete "/sessions", :to => "sessions#destroy", :as => "sign_out"
+  match "/auth/:provider/callback", :to => "session#create"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
