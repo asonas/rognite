@@ -3,6 +3,8 @@ Rognite::Application.routes.draw do
   resources :logs
   resources :projects
 
+  root to: "projects#index"
+
   delete "/sessions", :to => "sessions#destroy", :as => "sign_out"
   match "/auth/:provider/callback", :to => "session#create"
 
